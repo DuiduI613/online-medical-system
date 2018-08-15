@@ -29,3 +29,11 @@ A side project collaborated with Zhitian (zhitian.luo.0613@gmail.com) for practi
 - TBD
 
 We might change the project requirement any time
+
+# Build & run
+cd cmake
+cmake CMakeLists.txt
+make
+./medisys.tsk
+
+
