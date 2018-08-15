@@ -1,21 +1,15 @@
-#include patient.h
+#include <string>
 
-namespace Medisys
+#include "gender.h"
+#include "patient.h"
+
+namespace medisys
 {
-    class Patient
-    {
-      private:
-
-
-
-      public:
-        Patient(std::string name, int age, Gender gender):
-            m_name{name}, m_age{age}, m_gender{gender}
-        {
-        }
-
-
-
-    }
+Patient::Patient(const std::string& name, int age, Gender gender)
+: m_name{name}
+, m_age{age}
+, m_gender{gender}
+{
+}
 }
 
