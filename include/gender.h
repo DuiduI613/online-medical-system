@@ -3,7 +3,7 @@
 
 namespace medisys
 {
-enum Gender
+enum class Gender
 {
     MALE,
     FEMALE
