@@ -7,18 +7,14 @@
 namespace medisys
 {
 
-Patient::Patient(const std::string& name, int age, Gender gender, int doctorId)
+int Patient::id_count = 1;
+
+Patient::Patient(const std::string& name, int age, Gender gender)
 : m_id{id_count++}
 , m_name{name}
 , m_age{age}
 , m_gender{gender}
-, m_doctorId{doctorId}
 {
-}
-
-void Patient::resetID()
-{
-    Patient::id_count = 1;
 }
 
 Patient& Patient::name(const std::string& name)
@@ -44,7 +40,7 @@ int Patient::id()
     return m_id;
 }
 
-std::string Patient::name()
+const std::string&  Patient::name()
 {
     return m_name;
 }

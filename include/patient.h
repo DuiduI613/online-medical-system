@@ -2,7 +2,6 @@
 #define PATIENT_H
 
 #include <string>
-#include <vector>
 
 #include "gender.h"
 
@@ -12,7 +11,7 @@ namespace medisys
 class Patient
 {
   public:
-    Patient(const std::string& name, int age, Gender gender, int doctorId = 0);
+    Patient(const std::string& name, int age, Gender gender);
 
     Patient& name(const std::string& name);
 
@@ -22,7 +21,7 @@ class Patient
 
     int id();
 
-    std::string name();
+    const std::string&  name();
 
     int age();
 
@@ -34,10 +33,7 @@ class Patient
     std::string m_name;
     int         m_age;
     Gender      m_gender;
-    int         m_doctorId;
-
-    static void resetID();
- };
+};
 
 }
 

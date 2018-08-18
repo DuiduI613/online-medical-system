@@ -4,8 +4,6 @@
 #include "gender.h"
 #include "patient.h"
 
-int medisys::Patient::id_count = 1;
-
 int main(int argc, char* args[])
 {
     std::cout << "hello medisys" << std::endl;
